@@ -1,0 +1,208 @@
+@color-background-header: #ffffc5;
+@color-border-header: #f7d58d;
+@color-text-header: #efab55;
+@color-hover-header: #f3c071;
+@color-hover-background-header: #fbeaa9;
+@color-withe : #ffffff;
+
+@tablet: 720px;
+@min-width-pc: 1024px;
+
+main {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.history-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-slide {
+    flex: 1;
+    padding: 10px;
+    background-color: @color-background-header;
+    border: 2px solid @color-border-header;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.history-slide h2 {
+    color: @color-text-header;
+}
+
+.history-slide p {
+    color: @color-text-header;
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-slide {
+    padding: 20px;
+    background-color: @color-background-header;
+    border: 1px solid @color-border-header;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-slide h2 {
+    color: @color-text-header;
+}
+
+.project-slide p {
+    color: @color-text-header;
+}
+
+.image-carousel {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slide {
+    width: 80%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.image-slide img {
+    width: 180%;
+    height: auto;
+}
+
+/* Flechas de navegación */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+@media (max-width: @tablet) {
+    .history-carousel {
+        flex-direction: column;
+    }
+
+    .history-slide,
+    .project-info,
+    .image-carousel {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .carousel-arrow {
+        display: none;
+    }
+}
+
+.image-carousel {
+    display: flex;
+    overflow: hidden;
+    height: auto;
+}
+
+.image-slide {
+    flex: 0 0 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.image-slide.active {
+    opacity: 1;
+}
+
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  /* Estilos para los controles de flechas */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: @color-border-header; /* color del fondo de las flechas */
+    border: 2px solid @color-text-header; /* color del borde de las flechas */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: @color-text-header; /* color del icono de flecha */
+  }
+  
+  .arrow:hover {
+    background-color: @color-hover-header; /* color de fondo al pasar el mouse */
+  }
+  
+  .arrow.prev {
+    left: 10px;
+  }
+  
+  .arrow.next {
+    right: 10px;
+  }
+  
+  /* Ocultar controles en dispositivos pequeños */
+  @media (max-width: @tablet) {
+    .arrow {
+      display: none;
+    }
+  }
+
+  .slider-container {
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid @color-border-header; /* color del borde */
+    background-color: @color-background-header; /* color del fondo */
+    border-radius: 10px; /* redondear esquinas */
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/helps.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <section class="how-to-help">
+            <h2>¿Cómo ayudar?</h2>
+            <p class="help-text">TU COMPRA, AYUDA</p>
+            <p class="help-description">En nuestra cafetería, cada taza de café que compras no solo te brinda un delicioso y aromático momento de placer, sino que también contribuye a hacer una diferencia real en la vida de quienes más lo necesitan. Estamos comprometidos con el bienestar de los más postergados en nuestra sociedad, es por eso que destinamos el 5% de nuestras ganancias a fundaciones que trabajan incansablemente para ayudar a los más pobres de nuestro país.</p>
+            <img class="help-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1hT6mXGHxD6O10I9FRBZ9j2nrLz7o-DSonltnPVHrQ&s" alt="Imagen 1" />
+            <p class="help-description">Además, nos preocupamos por el medio ambiente y por eso hemos optado por vasos que son amigables con nuestro planeta. Nuestros vasos están fabricados con materiales que reducen el impacto ambiental, contribuyendo así a la preservación de nuestros recursos naturales para las generaciones futuras.</p>
+            <img class="help-image" src="https://recla.org/wp-content/uploads/2023/07/por-que-es-vital-la-sostenibilidad-ambiental.webp" alt="Imagen 2" />
+            <p class="help-description">Así que la próxima vez que disfrutes de una taza de nuestro delicioso café, recuerda que no solo estás disfrutando de un momento especial para ti, sino que también estás contribuyendo a un mundo mejor para todos. ¡Gracias por ser parte de esta causa!</p>
+        </section>
+    </main>
+    <footer>
+        {{>foot}}
+    </footer>
+</body>
+
+</html>

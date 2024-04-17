@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/programa.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="content">
+                <h2>Bienvenidos a Nuestra Cafetería</h2>
+                <p>En nuestra cafetería, no solo servimos deliciosas bebidas y tentadoras delicias, sino que también nos enorgullece ofrecer un ambiente cálido y acogedor que te hará sentir como en casa desde el momento en que cruces nuestras puertas.</p>
+                <p><strong>Horario de Atención:</strong><br>
+                Lunes a Viernes: 8:00 AM - 6:00 PM<br>
+                Sábado y Domingo: 9:00 AM - 5:00 PM</p>
+                <p>Durante nuestros horarios de trabajo, nuestro equipo dedicado se esfuerza por brindarte un servicio excepcional. Desde la sonrisa amigable al recibirte hasta el último sorbo de tu bebida favorita, nos aseguramos de que tu experiencia en nuestra cafetería sea memorable y satisfactoria.</p>
+            </div>
+            <div class="image">
+                <img src="./src/img-products/cafe.jpeg" alt="Interior de la cafetería">
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="image">
+                <img src="./src/img-products/donaciones.webp" alt="Donaciones">
+            </div>
+            <div class="content">
+                <h2>Donaciones</h2>
+                <p>Una parte de nuestras ganancias se destinan a donaciones para apoyar a los necesitados y proyectos ambientales. Así como cajas de donaciones en nuestros establecimientos.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="content">
+                <h2>Campañas de Participación Comunitaria</h2>
+                <p>Nos asociamos con otras organizaciones e institutos educativos para organizar campañas especiales en las que invitamos a los involucrados a participar activamente en actividades benéficas, como recolección de alimentos y limpieza de espacios públicos.</p>
+            </div>
+            <div class="image">
+                <img src="./src/img-products/ayuda.jpeg" alt="Participación comunitaria">
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="image">
+                <img src="./src/img-products/Proyectos de Sostenibilidad.png" alt="Proyectos de sostenibilidad">
+            </div>
+            <div class="content">
+                <h2>Proyectos de Sostenibilidad</h2>
+                <p>Estamos comprometidos con prácticas sostenibles, como el uso de productos orgánicos y la reducción de residuos, para proteger nuestro entorno.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+       {{>foot}}
+    </footer>
+</body>
+</html>

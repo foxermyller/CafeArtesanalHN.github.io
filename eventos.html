@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/eventos.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <div class="events-wrapper">
+            <div class="event-container" style="background-image: url('./src/img-products/voluntariado.jpeg');">
+              <div class="event-info">
+                <h2>Jornada de Voluntariado de comedor:</h2>
+                <p>Fecha y hora: 14 de Mayo</p>
+                <p>Con la ayuda de Institutos educativos y sus estudiantes, se nos unen a nosotros para ayudar en el comedor comunitario local. Pasaremos la tarde sirviendo comida, interactuando con los necesitados y brindando un poco de alegría a quienes más lo necesitan.</p>
+              </div>
+            </div>
+          
+            <div class="event-container" style="background-image: url('./src/img-products/recolecion.jpeg');">
+              <div class="event-info">
+                <h2>Campaña de Recolección de Ropa y Alimentos:</h2>
+                <p>Fecha y hora: 29 de Mayo</p>
+                <p>Junto a nuestros voluntarios, en nuestros estblecimientos se podra ayudar a recolectar ropa y alimentos para donar a organizaciones benéficas locales. Cada donación cuenta y hace una gran diferencia en la vida de quienes más lo necesitan.</p>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        {{>foot}}
+    </footer>
+</body>
+
+</html>

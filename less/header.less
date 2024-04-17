@@ -1,0 +1,154 @@
+/* Variables de colores */
+@color-background-header: #ffffc5;
+@color-border-header: #f7d58d;
+@color-text-header: #efab55;
+@color-hover-header: #f3c071;
+@color-hover-background-header: #fbeaa9;
+
+/* Variables de tamaños */
+@tablet: 720px;
+@min-width-pc: 1024px;
+
+header {
+    padding: 0 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @color-background-header;
+    border-bottom: 1px solid @color-border-header;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+header .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+header .hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: @color-text-header;
+    transition: all 0.3s ease-in-out;
+}
+
+header .branding {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 0.5cm;
+    font-weight: 800;
+    color: @color-text-header;
+    text-decoration: none;
+    text-align: center;
+}
+
+header .branding img {
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: @color-background-header;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+header #check:checked~nav {
+    height: 100vh;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+
+header nav ul li {
+    border-bottom: 1px solid @color-border-header;
+    width: 100%;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: @color-text-header;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: @color-hover-header;
+    background-color: @color-hover-background-header;
+}
+
+@media (min-width: @tablet) {
+    header {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    header .hamburger {
+        display: none;
+    }
+
+    header .branding {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    header nav {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+        min-width: 400px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        width: auto;
+    }
+
+    header nav ul li {
+        border: none;
+        width: auto;
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        padding: 0.5rem 0.75rem;
+    }
+
+    header nav ul li a:hover {
+        background-color: @color-background-header;
+        border-bottom: @color-text-header 2px solid;
+        color: @color-text-header;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/faq.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <section class="faq-container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cuál es el objetivo de nuestra organización?</h3>
+                <p>Nuestra organización tiene como objetivo principal brindar apoyo a las comunidades locales a través de programas de alimentación y educación.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo puedo contribuir?</h3>
+                <p>Puedes contribuir de varias formas, como haciendo donaciones, participando como voluntario en nuestros eventos o difundiendo nuestra causa en redes sociales.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Dónde se ubica nuestra sede?</h3>
+                <p>Nuestra sede principal está ubicada en la siguiente dirección: [Residencial los Alamos].</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo puedo contactarnos?</h3>
+                <p>Puedes contactarnos a través de nuestro correo electrónico: aromadecafe@gmail.com o llamando al siguiente número: +504 99193618.</p>
+            </div>
+        </section>
+    </main>    
+    <footer>
+        {{>foot}}
+    </footer>
+</body>
+
+</html>

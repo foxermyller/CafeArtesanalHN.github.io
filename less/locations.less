@@ -1,0 +1,53 @@
+/* Variables de colores */
+@color-background-location: #a2f4ff;
+@color-text-location: #000;
+@color-border-location: #000;
+
+.location {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: @color-background-location;
+    flex-wrap: wrap;
+}
+
+.location form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.location h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.location a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: @color-text-location;
+    text-decoration: none;
+    border: 1px solid @color-border-location;
+    transition: all 0.3s ease-in-out;
+    border-radius: 27px;
+    text-align: center;
+    max-width: 200px;
+    margin: 1rem auto;
+}
+
+.location a:hover {
+    background-color: @color-text-location;
+    color: @color-background-location;
+}
+
+.location img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

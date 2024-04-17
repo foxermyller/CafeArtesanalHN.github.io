@@ -1,0 +1,50 @@
+// Definición de variables de color
+@color-background-header: #ffffc5;
+@color-border-header: #f7d58d;
+@color-text-header: #efab55;
+@color-hover-header: #f3c071;
+@color-hover-background-header: #fbeaa9;
+@color-white: #ffffff;
+
+// Media queries para tamaños de pantalla
+@tablet: 720px;
+@min-width-pc: 1024px;
+
+
+main {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+// Estilos para la sección "Cómo ayudar"
+.how-to-help {
+    text-align: center;
+    padding: 40px 20px;
+    
+    h2 {
+      color: @color-text-header;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .help-text {
+      color: @color-hover-header;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    .help-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  
+    .help-image {
+      max-width: 50%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  

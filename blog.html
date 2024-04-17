@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/blog.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>IMPACTO EN LA SOCIEDAD</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcL5u7Iu3UdiPd09xuiyf_yoH3eZNsR8YFKsj38thO3I-Dz9WDQ57997VE5DSFP00xzk&usqp=CAU" alt="">
+            <p>Los niños que crecen en condiciones de pobreza típicamente...</p>
+            <a href="https://www.children.org/es/ver-el-impacto/programas-humanitarios" target="_blank">Leer más</a>
+        </article>
+        <article>
+            <h2>ACCION HUMANITARIA</h2>
+            <img src="https://iecah.org/wp-content/uploads/2012/10/foto.articuloPACO.jpg" alt="">
+            <p>Esta trágica realidad.</p>
+            <a href="http://www.aecid.hn/sitio/index.php/ayuda-humanitaria" target="_blank">Leer más</a>
+        </article>
+        <article>
+            <h2>DESNUTRICION</h2>
+            <img src="https://www.savethechildren.es/sites/default/files/styles/teaser_horizontal/public/images/article/yemen-desnutricion-paz-guerra.jpg?itok=J4hZR0_e" alt="">
+            <p>Niños y niñas mueren.</p>
+            <a href="https://www.icbf.gov.co/ser-papas/senales-de-alerta-de-la-desnutricion-infantil#:~:text=La%20desnutrici%C3%B3n%20infantil%20es%20una,estado%20nutricional%20de%20la%20ni%C3%B1ez." target="_blank">Leer más</a>
+        </article>
+    </main>
+    <footer>
+       {{>foot}}
+    </footer>
+</body>
+
+</html>

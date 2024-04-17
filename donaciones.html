@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/donaciones.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+    
+        <form id="donation-form">
+            <h2>Formulario de Donación</h2>
+            <label for="amount">Cantidad a donar:</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje (opcional):</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Enviar Donación</button>
+        </form>
+    
+        <div id="thank-you" style="display: none;">
+            <h3>¡Muchas gracias por tu donación!</h3>
+            <p>Nos pondremos en contacto contigo pronto.</p>
+        </div>
+    </main>
+    
+    <footer>
+        {{>foot}}
+    </footer>
+</body>
+
+</html>

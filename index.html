@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <div class="central-image">
+            <img src="./src/fondo Cafe.jpeg" alt="" srcset="">
+            <h1>Bienvenidos a Aroma de Café</h1>
+            <p>Somos una cafetería comprometida con la calidad del café y con la comunidad. <br> Nuestra misión es brindar un ambiente acogedor donde disfrutar de deliciosas <br> bebidas y alimentos, mientras apoyamos a causas sociales importantes.</p>
+        </div>   
+        <div class="container">
+            <div class="eventos">
+                <h2>Eventos</h2>
+                <div class="carousel">
+                    <div class="card active">
+                        <img src="./src/img-products/cafecitoindex1.jpeg" alt="Café">
+                        <div class="text">
+                            <h3>Cata de Café</h3>
+                            <p>Únete a nuestra cata de café <br>el próximo sábado 15 de mayo a las 10:00 AM. <br>Descubre nuevos sabores y aprende sobre el arte del café <br> con nuestros expertos.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img-products/cafecitoindex2.jpeg" alt="Café">
+                        <div class="text">
+                            <h3>Café de Origen</h3>
+                            <p>¡Prueba nuestro café de origen recién llegado! Disfruta de los sabores <br> únicos de regiones cafetaleras de todo el mundo.</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="noticias">
+                <h2>Noticias</h2>
+                <div class="card">
+                    <img src="./src/img-products/cafegrafica.jpeg" alt="Café">
+                    <div class="text">
+                        <h3>Bajo del precio del café</h3>
+                        <p>El precio del café ha bajado en los mercados <br> internacionales debido a...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+    <footer>
+        {{>foot}}
+    </footer>
+
+    <script src="./js/carrucel.js"></script>
+</body>
+
+</html>

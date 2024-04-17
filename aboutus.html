@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe HN</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="less/aboutus.less">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="./src/logo.webp" alt="logo">
+            <h1>Cafe HN</h1>
+        </section>
+        <nav>
+            {{>navi}}
+        </nav>
+    </header>
+    <main>
+        <section class="history-carousel">
+            <div class="history-slide">
+                <h2>Nuestra Historia</h2>
+                <p>"Aroma de Café" se encuentra en el corazón del País, y ha sido un destino popular para los amantes del café y aquellos que buscan un lugar cálido y acogedor para reunirse con amigos y familiares. Con la creciente conveniencia de la tecnología digital, surge la necesidad de establecer una presencia en línea que refleje nuestra identidad y valores como cafetería.</p>
+            </div>
+        </section>
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slide"><img src="./src/img-products/carrucel-3.jpeg" alt="Imagen 1"></div>
+              <div class="slide"><img src="./src/img-products/carrucel-2.jpeg" alt="Imagen 2"></div>
+              <div class="slide"><img src="./src/img-products/carrucel-1.jpeg" alt="Imagen 3"></div>
+              <!-- Agrega más imágenes aquí si lo deseas -->
+            </div>
+          </div>
+    </main>          
+    
+    <footer>
+        {{>foot}}
+    </footer>
+    <script src="./js/currucelImagen.js"></script>
+</body>
+
+</html>

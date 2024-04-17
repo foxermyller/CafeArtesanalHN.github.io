@@ -1,0 +1,40 @@
+// Variables
+@color-background-header: #ffffc5;
+@color-border-header: #f7d58d;
+@color-text-header: #efab55;
+@color-hover-header: #f3c071;
+@color-hover-background-header: #fbeaa9;
+@color-white: #ffffff;
+
+// Estilos de la galería
+.gallery {
+    display: grid;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 5px solid @color-text-header; /* Añade un borde gris a las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Organización de los productos */
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Organiza las imágenes en tres columnas en pantallas grandes */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* Organiza las imágenes en una columna en pantallas pequeñas */
+    }
+}
+
+h2 {
+    text-align: center; 
+    color: @color-text-header; 
+    font-size: 2em; 
+}

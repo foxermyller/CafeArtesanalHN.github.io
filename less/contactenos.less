@@ -1,0 +1,78 @@
+@color-background-header: #ffffc5;
+@color-border-header: #f7d58d;
+@color-text-header: #efab55;
+@color-hover-header: #f3c071;
+@color-hover-background-header: #fbeaa9;
+@color-withe : #ffffff;
+/* Variables de tamaños */
+@tablet: 720px;
+@min-width-pc: 1024px;
+
+.contacto {
+    padding: 20px;
+    background-color: @color-background-header;
+    border: 1px solid @color-border-header;
+    margin: 20px;
+    border-radius: 10px;
+
+    h2 {
+        color: @color-text-header;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: @color-text-header;
+        margin-bottom: 20px;
+    }
+
+    .info-contacto {
+        margin-bottom: 20px;
+        
+        h3 {
+            color: @color-text-header;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: @color-text-header;
+            margin-bottom: 5px;
+        }
+    }
+
+    .redes-sociales {
+        h3 {
+            color: @color-text-header;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    color: @color-text-header;
+                    text-decoration: none;
+                    font-weight: bold;
+                    &:hover {
+                        color: @color-hover-header;
+                        background-color: @color-hover-background-header;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        .info-contacto, .redes-sociales {
+            width: 100%;
+        }
+
+        .redes-sociales {
+            margin-top: 20px;
+        }
+    }
+}

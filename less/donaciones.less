@@ -1,0 +1,73 @@
+@color-background-header: #ffffc5;
+@color-border-header: #f7d58d;
+@color-text-header: #efab55;
+@color-hover-header: #f3c071;
+@color-hover-background-header: #fbeaa9;
+@color-withe : #ffffff;
+/* Variables de tamaños */
+@tablet: 720px;
+@min-width-pc: 1024px;
+
+form {
+    margin: 3%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: @color-background-header;
+    border: 1px solid @color-border-header;
+    border-radius: 10px;
+
+    h2 {
+        color: @color-text-header;
+        margin-bottom: 10px;
+    }
+
+    label {
+        color: @color-text-header;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid @color-border-header;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: @color-hover-header;
+        color: @color-withe;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: @color-hover-background-header;
+        }
+    }
+}
+
+#thank-you {
+    padding: 20px;
+    background-color: @color-background-header;
+    border: 1px solid @color-border-header;
+    border-radius: 10px;
+    text-align: center;
+
+    h3 {
+        color: @color-text-header;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: @color-text-header;
+    }
+}
+
+@media (max-width: @tablet) {
+    form {
+        width: 100%;
+    }
+}
